@@ -1,0 +1,22 @@
+{
+  "name": "arevisual",
+  "version": "1.0.0",
+  "description": "Theme for ARE Visual WordPress site",
+  "scripts": {
+    "sass": "node-sass --watch _sass/style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "PUT GIT LINK HERE"
+  },
+  "author": "Andrew R Emery",
+  "homepage": "PUT LINK TO README HERE",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "normalize.css": "^8.0.1"
+  }
+}
