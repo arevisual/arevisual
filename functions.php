@@ -172,6 +172,16 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Loads custom post types.
+ */
+require get_template_directory() . '/inc/post-types.php';
+
+/**
+ * Loads custom post taxonomies.
+ */
+require get_template_directory() . '/inc/taxonomies.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
