@@ -88,7 +88,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Jetpack infinite scroll
 --------------------------------------------- */
 @import "plugins/jetpack/infinite-scroll";
+/* Bootstrap Required files
+--------------------------------------------- */
+@import "plugins/bootstrap/functions";
+@import "plugins/bootstrap/variables";
+@import "plugins/bootstrap/mixins";
 
+/* Bootstrap Modals
+--------------------------------------------- */
+@import "plugins/bootstrap/bootstrap";
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
