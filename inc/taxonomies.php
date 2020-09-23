@@ -38,7 +38,7 @@ function arevisual_skills_taxonomy() {
 		'show_in_nav_menus' => true,
 		'show_tagcloud'     => true,
 	);
-	register_taxonomy( 'Skills', array( 'portfolio' ), $args );
+	register_taxonomy( 'skills', array( 'portfolio' ), $args );
 
 }
 add_action( 'init', 'arevisual_skills_taxonomy', 0 );
