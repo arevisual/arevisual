@@ -37,13 +37,19 @@ function arevisual_portfolio_post_type() {
 		'items_list_navigation' => __( 'Items list navigation', 'arevisual' ),
 		'filter_items_list'     => __( 'Filter items list', 'arevisual' ),
 	);
+	$rewrite = array(
+		'slug'                  => 'portfolio_archive',
+		'with_front'            => true,
+		'pages'                 => true,
+		'feeds'                 => true,
+	);
 	$args = array(
 		'label'                 => __( 'Portfolio Item', 'arevisual' ),
 		'description'           => __( 'Post Type Description', 'arevisual' ),
 		'labels'                => $labels,
 		'show_in_rest'          => true,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'page-attributes', 'post-formats' ),
-		'taxonomies'            => array( 'skills' ),
+		'taxonomies'            => array( 'skills','role' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -55,6 +61,7 @@ function arevisual_portfolio_post_type() {
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
+		'rewrite'               => $rewrite,
 		'capability_type'       => 'page',
 	);
 	register_post_type( 'portfolio', $args );
