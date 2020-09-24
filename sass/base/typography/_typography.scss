@@ -9,6 +9,13 @@ textarea {
 	font-size: 1rem;
 	line-height: $font__line-height-body;
 }
+.has-drop-cap:not(:focus):first-letter{
+	font-family: $heading-font;
+	background: rgba(239,60,35,.25);
+	font-size: 7em;
+	margin: 0 .1em 0 0;
+	padding: .03em .03em .15em .03em;
+}
 
 @import "copy";
 @import "headings";
