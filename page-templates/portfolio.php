@@ -10,8 +10,9 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-  <section id="portfolio-container">
+<main id="primary" class="site-main">
+	<h1><?php the_title();?></h1>
+  	<section id="portfolio-container">
 		<?php
 		$args = array(
 			'post_type' => 'portfolio',

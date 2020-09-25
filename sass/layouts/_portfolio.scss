@@ -28,7 +28,10 @@
 			object-fit: cover;
 		}
 		.text-container{
-			padding: .25em;
+			padding: .5em 1em;
+			h2{
+				font-size: 1.5em;
+			}
 		}
 	}
 	.modal-header{
@@ -37,6 +40,11 @@
 	.modal{
 		.modal-dialog {
 			width: 100%;
+			padding: 0 2em;
+			.modal-content{
+				padding: $default-padding;
+
+			}
 			@include md{
 				max-width: 98%;
 				margin-left: 1.5%;

@@ -1,6 +1,11 @@
 a {
 	color: $color__link;
-
+	transition: all .3s ease-in-out;
+	background: linear-gradient(to right, rgba(255,255,255,0) 50%, $link-color-hover-background 30%);
+	background-position: -0% 0;
+	background-size: 200% auto;
+	transition: background-position 0.30s ease-out;
+	
 	&:visited {
 		color: $color__link-visited;
 	}
@@ -18,5 +23,8 @@ a {
 	&:hover,
 	&:active {
 		outline: 0;
+	}
+	&:hover{
+		background-position: -99.99% 0;
 	}
 }

@@ -9,6 +9,7 @@ input[type="submit"] {
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
+	cursor: pointer;
 
 	&:hover {
 		border-color: $color__border-button-hover;
@@ -17,5 +18,36 @@ input[type="submit"] {
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
+	}
+}
+.wp-block-button{
+	a{
+		background-position: unset;
+		background: unset;
+	}
+}
+.is-style-fill{
+	background-color: $accent-color;
+	border-color: $accent-color;
+	border-radius: 28px;
+	opacity: .85;
+	transition: all 300ms ease-in-out;
+	&:hover{
+		opacity: 1;
+		box-shadow: 0px 0px 5px 0px rgba(33,11,9,.5);
+	}
+}
+.is-style-outline{
+	background: transparent;
+	border-color: $accent-color;
+	border-radius: 28px;
+	color: $accent-color;
+	transition: all 300ms ease-in-out;
+	&:hover{
+		color: #fff;
+		background: $accent-color;
+		border-color: $accent-color;
+		border-radius: 28px;
+		border: none;
 	}
 }
