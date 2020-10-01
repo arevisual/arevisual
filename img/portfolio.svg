@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <rect id="case" x="15.524" y="44.476" width="119.685" height="75.734" style="fill:white;stroke:black;stroke-width:3px;"/>
+    <path id="lid" d="M15.524,71.014C18.765,76.888 25.245,88.636 40.49,87.692L111.608,87.692C111.608,87.692 135.315,82.448 135,68.497" style="fill:white;stroke:black;stroke-width:3px;"/>
+    <g id="handle" transform="matrix(1,0,0,1,0,3)">
+        <path d="M49.51,40.49C49.51,40.49 47.727,28.636 55.28,28.741L95.327,28.741C102.879,28.636 101.096,40.49 101.096,40.49" style="fill:white;stroke:black;stroke-width:3px;"/>
+    </g>
+    <g id="buckle" transform="matrix(0.658536,0,0,1,41.6012,0)">
+        <path d="M57.168,81.425C57.168,80.252 55.723,79.301 53.942,79.301L47.491,79.301C45.711,79.301 44.266,80.252 44.266,81.425L44.266,93.645C44.266,94.817 45.711,95.769 47.491,95.769L53.942,95.769C55.723,95.769 57.168,94.817 57.168,93.645L57.168,81.425Z" style="fill:white;stroke:black;stroke-width:3.54px;"/>
+    </g>
+</svg>

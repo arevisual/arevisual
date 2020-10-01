@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="blog" transform="matrix(1.05839,0,0,1.05839,-4.35118,-6.21749)">
+        <rect id="page" x="32.68" y="34.233" width="84.588" height="85.009" style="fill:white;stroke:black;stroke-width:2.83px;"/>
+        <g id="text">
+            <g id="text1" serif:id="text" transform="matrix(2.71832,0,0,1.98766,-80.6783,-58.9768)">
+                <rect x="46.678" y="52.972" width="20.874" height="2.517"/>
+            </g>
+            <g id="text2" serif:id="text" transform="matrix(2.35588,0,0,1.98766,-63.0245,-47.9436)">
+                <rect x="46.678" y="52.972" width="20.874" height="2.517"/>
+            </g>
+            <g id="text3" serif:id="text" transform="matrix(1.85249,0,0,1.98766,-39.527,-38.3814)">
+                <rect x="46.678" y="52.972" width="20.874" height="2.517"/>
+            </g>
+            <g id="text4" serif:id="text" transform="matrix(1.3793,0,0,1.98766,-17.5444,-28.0837)">
+                <rect x="46.678" y="52.972" width="20.874" height="2.517"/>
+            </g>
+            <g id="text5" serif:id="text" transform="matrix(1.07726,0,0,1.98766,-3.97124,-17.891)">
+                <rect x="46.678" y="52.972" width="20.874" height="2.517"/>
+            </g>
+            <g id="text6" serif:id="text" transform="matrix(0.855769,0,0,1.98766,6.73715,-6.85774)">
+                <rect x="46.678" y="52.972" width="20.874" height="2.517"/>
+            </g>
+        </g>
+        <g id="pencil" transform="matrix(1,0,0,1,1,1)">
+            <path d="M75.189,90.701L73.189,98.701L79.889,96.001L109.089,67.601L103.889,62.101L75.189,90.701Z" style="fill:white;stroke:black;stroke-width:2.83px;"/>
+        </g>
+    </g>
+</svg>
