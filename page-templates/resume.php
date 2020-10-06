@@ -22,8 +22,8 @@ endif;
 	?>
 	
 	
-  <section id="resume-outer-container">
-		<section id="resume-inner-container">
+  <section id="jobs-outer-container">
+		<section id="jobs-inner-container">
 		<?php
 		$args = array(
 			'post_type' => 'jobs',
@@ -35,7 +35,7 @@ endif;
 				$the_query->the_post();
 				?>
 					
-				<article class="resume-item">
+				<article class="jobs-item">
 						<h3><?php the_title(); ?></h3>
 					<?php the_content(); ?>
 				</article>
