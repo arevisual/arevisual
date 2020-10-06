@@ -24,26 +24,30 @@ endif;
 	
   <section id="resume-outer-container">
 		<section id="resume-inner-container">
-			<article class="resume-item one">
+		<?php
+		$args = array(
+			'post_type' => 'jobs',
+		);
 
-			</article>
-			<article class="resume-item two">
-
-			</article>
-
-			<article class="resume-item one">
-
-			</article>
-			<article class="resume-item two">
-
-			</article>
-
-			<article class="resume-item one">
-
-			</article>
-			<article class="resume-item two">
-
-			</article>
+		$the_query = new WP_Query( $args );
+		if ( $the_query->have_posts() ) :
+			while ( $the_query->have_posts() ) :
+				$the_query->the_post();
+				?>
+					
+				<article class="resume-item">
+						<h3><?php the_title(); ?></h3>
+					<?php the_content(); ?>
+				</article>
+	
+				<?php
+			endwhile; // End of the loop.
+			else :
+				?>
+				<p><?php _e( 'Nothing to Show. Please come back later.' ); ?></p>
+		<?php endif; ?>
+		
+	<?php wp_reset_postdata(); ?>
 		</section>
 
   </section>
