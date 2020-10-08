@@ -30,14 +30,19 @@ endif;
 		);
 
 		$the_query = new WP_Query( $args );
+		$i         = 1;
+
 		if ( $the_query->have_posts() ) :
 			while ( $the_query->have_posts() ) :
 				$the_query->the_post();
 				?>
-					
-				<article class="jobs-item">
+				<?php $job_id = 'job-item' . $i; ?>
+				<article class="jobs-item" id="<?php echo $job_id; ?>">
+					<section class="job-item-inner wow fadeInRight">
 						<h3><?php the_title(); ?></h3>
-					<?php the_content(); ?>
+						<?php the_content(); ?>
+					</section>
+					<?php $i++; ?>
 				</article>
 	
 				<?php

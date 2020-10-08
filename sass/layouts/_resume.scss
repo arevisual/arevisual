@@ -16,6 +16,20 @@
 		.jobs-item {
 			width: 100vw;
 			height: 100vw;
+
+			border-top: 15px solid rgba(239, 60, 35, 1);
+			.job-item-inner {
+				width: 75%;
+				padding: 2em;
+				margin: 1em;
+				box-shadow: 0 6px 10px rgba(0,0,0,0.2), 0 0 6px rgba(0,0,0,0.2);
+				@include lg{
+					width: 50%;
+				}
+				ul{
+					margin: 0;
+				}
+			}
 		}
 	}
 }
