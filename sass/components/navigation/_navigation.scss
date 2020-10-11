@@ -90,7 +90,9 @@
 		background-image: url(http://localhost/arevisual/wp-content/themes/arevisual/img/contact.svg);
 	}
 	.current_page_item {
-		background: rgba(239, 60, 35, 0.4);
+		a{
+		border-bottom: 2px solid $accent-color;
+		}
 	}
 }
 
