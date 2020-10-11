@@ -10,20 +10,13 @@
 		text-align: center;
 		.site-title {
 			font-size: 4em;
-			margin: .5em;
+			margin: 1em;
 			line-height: 1em;
 			a {
 				font-family: $heading-font;
 				font-weight: 900;
-				text-shadow: none;
 				text-decoration: none;
-				transition: all 0.3s ease-in-out;
-				background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, $link-color-hover-background 30%);
-				background-position: -0% 0;
-				background-size: 200% auto;
-				transition: background-position 0.3s ease-out;
 				&:hover {
-					background-position: -99.99% 0;
 				}
 			}
 		}
