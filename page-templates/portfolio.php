@@ -11,8 +11,8 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-	<h1><?php the_title();?></h1>
-  	<section id="portfolio-container">
+	<h1><?php the_title(); ?></h1>
+	  <section id="portfolio-container">
 		<?php
 		$args = array(
 			'post_type' => 'portfolio',
@@ -23,11 +23,11 @@ get_header();
 			while ( $the_query->have_posts() ) :
 				$the_query->the_post();
 				?>
-				<?php 
-					$slug = $post->post_name; 
-					$role_array = get_the_terms( $post->ID, 'role' );
-					$role_string = join(', ', wp_list_pluck($role_array, 'name'))
-					
+				<?php
+					$slug        = $post->post_name;
+					$role_array  = get_the_terms( $post->ID, 'role' );
+					$role_string = join( ', ', wp_list_pluck( $role_array, 'name' ) )
+
 				?>
 
 			<a data-toggle="modal" data-target="#portfolio-<?php echo $slug; ?>" class="portfolio-link">
@@ -35,7 +35,7 @@ get_header();
 					<?php the_post_thumbnail( 'large' ); ?>
 					<section class="text-container">
 						<h2><?php the_title(); ?></h2>
-						<p><?php  echo wp_kses_post ( $role_string ) ?></p>
+						<p><?php echo wp_kses_post( $role_string ); ?></p>
 					</section>
 				</article>
 			</a>
@@ -57,10 +57,10 @@ get_header();
 		while ( $the_query->have_posts() ) :
 			$the_query->the_post();
 			?>
-			<?php 
-				$slug = $post->post_name; 
-				$skills_array = get_the_terms( $post->ID, 'skills' );
-				$skills_string = join(', ', wp_list_pluck($skills_array, 'name'))
+			<?php
+				$slug          = $post->post_name;
+				$skills_array  = get_the_terms( $post->ID, 'skills' );
+				$skills_string = join( ', ', wp_list_pluck( $skills_array, 'name' ) )
 			?>
 	
 			<!-- The Modal -->
@@ -71,15 +71,15 @@ get_header();
 					<!-- Modal Header -->
 					<div class="modal-header">
 					<h2 class="modal-title"><?php the_title(); ?></h2>
+					<?php if ( $skills_string && ! is_wp_error( $skills_string ) ) : ?>
+						<section class="modal-skills-list">
+							<span class="skills-list-heading">Skills Used:</span>
+							<?php echo wp_kses_post( $skills_string ); ?>
+						</section>
+					<?php endif; ?>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
 
-					<?php if ( $skills_string && ! is_wp_error( $skills_string ) ) : ?>
-						<section class="modal-skills-list">
-							<?php  echo wp_kses_post ( $skills_string ) ?>
-						</section>
-					<?php endif; ?>
-					
 					<!-- Modal body -->
 					<div class="modal-body">
 						<?php the_content(); ?>
@@ -94,7 +94,7 @@ get_header();
 				</div>
 			</div>
 
-	<?php
+			<?php
 	  endwhile;// End of the loop.
 	endif;
 	?>
