@@ -1,6 +1,8 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
 	.site-main{
+		width: 90%;
+		margin-left: 5%;
 		background-color: #fffffc;
 background-image: url("https://www.transparenttextures.com/patterns/subtle-dots.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
