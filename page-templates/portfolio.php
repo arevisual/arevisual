@@ -87,7 +87,9 @@ get_header();
 					
 					<!-- Modal footer -->
 					<div class="modal-footer">
-					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						<div class="wp-block-button is-style-fill">
+							<a type="button" class="btn btn-danger wp-block-button__link" data-dismiss="modal">Close</a>
+						</div>
 					</div>
 					
 				</div>
