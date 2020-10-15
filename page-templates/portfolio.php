@@ -31,7 +31,7 @@ get_header();
 				?>
 
 			<a data-toggle="modal" data-target="#portfolio-<?php echo $slug; ?>" class="portfolio-link">
-				<article class="portfolio-item">
+				<article class="portfolio-item job-item-inner wow animate__animated animate__fadeIn animate__slower">
 					<?php the_post_thumbnail( 'large' ); ?>
 					<section class="text-container">
 						<h2><?php the_title(); ?></h2>
