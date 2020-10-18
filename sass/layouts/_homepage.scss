@@ -1,8 +1,11 @@
 .home {
 	.site-main {
 		padding: 0;
-		.hp-intro-banner{
+		.hp-intro-banner {
 			margin-top: -1.5em;
+			p {
+				max-width: 75%;
+			}
 		}
 		.hp-portfolio {
 			border-radius: 4px;
@@ -19,7 +22,7 @@
 				width: 100%;
 				object-fit: cover;
 			}
-			figcaption{
+			figcaption {
 				padding: 1em 2em;
 			}
 		}
