@@ -105,7 +105,17 @@
 }
 .menu-toggle {
 	width: 95%;
-	margin: 0 0.1em 2.5%;
+	margin: 0 0 0.1em 2.5%;
+	background: transparent;
+	border-color: $accent-color;
+	border-radius: 28px;
+	color: $accent-color;
+	transition: all 300ms ease-in-out;
+	&:hover {
+		color: #fff;
+		background: $accent-color;
+		border-color: $accent-color;
+	}
 }
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
