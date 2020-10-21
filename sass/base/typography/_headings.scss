@@ -9,12 +9,15 @@ h6 {
 }
 
 h1 {
-	font-size: 4.5em;
+	font-size: 3.5em;
 	text-align: center;
 	background-color: $color__text-main;
 	color: #fff;
 	margin-top: -16px;
-	padding: .5em 0;
+	padding: 0.5em 0;
+	@include md {
+		font-size: 4.5em;
+	}
 }
 
 h2 {
