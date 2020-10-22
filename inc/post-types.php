@@ -39,7 +39,7 @@ function arevisual_portfolio_post_type() {
 	);
 	$rewrite = array(
 		'slug'       => 'portfolio_archive',
-		'with_front' => true,
+		'with_front' => false,
 		'pages'      => true,
 		'feeds'      => true,
 	);
