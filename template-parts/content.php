@@ -19,13 +19,12 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				arevisual_posted_on();
 				arevisual_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-	
+
 	<div class="entry-content">
 		<?php
 		the_content(
