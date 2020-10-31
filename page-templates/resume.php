@@ -38,7 +38,7 @@ endif;
 				?>
 				<?php $job_id = 'job-item' . $i; ?>
 				<article class="jobs-item" id="<?php echo $job_id; ?>">
-					<section class="job-item-inner wow fadeInRight">
+					<section class="job-item-inner wow animate__animated animate__fadeInUp animate__slow">
 						<h3><?php the_title(); ?></h3>
 						<?php the_content(); ?>
 					</section>

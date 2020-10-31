@@ -6,45 +6,37 @@ h5,
 h6 {
 	clear: both;
 	font-family: $heading-font;
-	letter-spacing: 0.1em;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: 600;
 }
 
 h1 {
-	font-size: 3em;
-	font-weight: 900;
+	font-size: 3.5em;
+	text-align: center;
+	background-color: $color__text-main;
 	color: #fff;
-	text-shadow: $heading-shadow;
+	margin-top: -16px;
+	padding: 0.5em 0;
+	@include md {
+		font-size: 4.5em;
+	}
 }
 
 h2 {
 	font-size: 2.5em;
-	color: #fff;
-	text-shadow: $heading-shadow;
-	font-weight: 600;
+	font-weight: 300;
 }
 
 h3 {
 	font-size: 2em;
-	color: #fff;
-	text-shadow: $heading-shadow;
-	font-weight: 600;
+	font-weight: 300;
 }
 
 h4 {
-	font-size: 1.5em;
+	font-size: 1.75em;
 	font-weight: 300;
 }
 
 h5 {
-	font-size: 1.2em;
+	font-size: 1.25em;
 	font-weight: 300;
 }
 

@@ -1,38 +1,18 @@
 #jobs-outer-container {
-	width: 100vh;
-	height: 100vw;
-	transform: rotate(-90deg) translateX(-100vh);
-	transform-origin: top left;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	scrollbar-width: none;
-	-ms-overflow-style: none;
 	#jobs-inner-container {
-		display: flex;
-		flex-direction: row;
-		width: 400vw;
-		transform: rotate(90deg) translateY(-100vh);
-		transform-origin: top left;
 		.jobs-item {
-			width: 100vw;
-			height: 100vw;
-
-			border-top: 15px solid rgba(239, 60, 35, 1);
+			width: 100%;
+			margin: 2em auto;
+			@include lg {
+				width: 50%;
+			}
 			.job-item-inner {
-				width: 75%;
 				padding: 2em;
-				margin: 1em;
-				box-shadow: 0 6px 10px rgba(0,0,0,0.2), 0 0 6px rgba(0,0,0,0.2);
-				@include lg{
-					width: 50%;
-				}
-				ul{
+				box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.2);
+				ul {
 					margin: 0;
 				}
 			}
 		}
 	}
-}
-::-webkit-scrollbar {
-	display: none;
 }
