@@ -55,5 +55,23 @@
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
+
+		<?php
+		if ( 'portfolio' === get_post_type() ) :
+			$slug          = $post->post_name;
+			$skills_array  = get_the_terms( $post->ID, 'skills' );
+			$skills_string = join( ', ', wp_list_pluck( $skills_array, 'name' ) )
+			?>
+			<div class="entry-meta">
+				<?php
+				 if ( $skills_string && ! is_wp_error( $skills_string ) ) : ?>
+					<section class="modal-skills-list">
+						<span class="skills-list-heading">Skills:</span>
+						<?php echo wp_kses_post( $skills_string ); ?>
+						<?php endif; ?>
+					</section>
+			
+			</div><!-- .entry-meta -->
+		<?php endif; ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
