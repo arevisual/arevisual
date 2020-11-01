@@ -1,6 +1,14 @@
 .single {
-	.skills-list-heading {
-		font-weight: 900;
-		font-family: $heading-font;
+	.entry-footer {
+		background: $color__text-main;
+		color: #fff;
+		padding: 2em;
+		a {
+			color: #fff;
+		}
+		.skills-list-heading {
+			font-weight: 900;
+			font-family: $heading-font;
+		}
 	}
 }
