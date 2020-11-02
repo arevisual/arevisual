@@ -34,7 +34,11 @@ get_header();
 				get_template_part( 'template-parts/content', get_post_type() );
 
 			endwhile;
-
+			$args    = array(
+				
+				'labels'              => $labels,
+			
+			);
 			the_posts_navigation();
 
 		else :
