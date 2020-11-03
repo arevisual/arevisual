@@ -16,40 +16,34 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
+		<h1>Blog</h1>
 		<?php
 		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+			?>
+							
+				<section id="blog-container">
 				<?php
-			endif;
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
+				/* Start the Loop */
+				while ( have_posts() ) :
+					the_post();
+					?>
+				<a href="<?php the_permalink(); ?>"  class="blog-link">
+					<article class="blog-item job-item-inner wow animate__animated animate__fadeIn animate__slower">
+						<?php the_post_thumbnail( 'large' ); ?>
+						<section class="text-container">
+							<h2><?php the_title(); ?></h2>
+						</section>
+					</article>
+				</a>
+					<?php
 			endwhile;
-
-			the_posts_navigation();
-
 		else :
-
 			get_template_part( 'template-parts/content', 'none' );
-
 		endif;
 		?>
-
+</section>
+<?php the_posts_navigation(); ?>
 	</main><!-- #main -->
 
 <?php
