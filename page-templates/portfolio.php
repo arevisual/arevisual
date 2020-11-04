@@ -101,7 +101,8 @@ get_header();
 	endif;
 	?>
 
-</section
+</section>
+
 	</main>
 	
 
