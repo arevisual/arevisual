@@ -10,20 +10,31 @@
  */
 
 ?>
-
-	<footer id="colophon" class="site-footer">
+<?php
+ $root_url = get_site_url();
+?>
+	<footer id="colophon" class="site-footer  wow animate__animated  animate__ animate__fadeInUp">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'arevisual' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'arevisual' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'arevisual' ), 'arevisual', '<a href="http://www.arevisual.com/">Andrew R. Emery, ARE Visual</a>' );
-				?>
+			<div class="footer-container">
+				&copy; <?php echo date( 'Y' ); ?> Andrew R Emery
+			</div>
+			<div id="social-menu" class="footer-container">
+				<a href="https://github.com/arevisual/" target="_blank">
+					<span class="fa fa-github-square" role="link"></span>
+				</a>
+				<a href="https://www.linkedin.com/in/andrewemery" target="_blank">
+					<span class="fa fa-linkedin-square" role="link"></span>
+				</a>
+				<a href="https://www.shutterstock.com/g/are%20visual" target="_blank">
+					<span class="fa fa-camera" role="link"></span>
+				</a>
+				<a href="https://www.youtube.com/channel/UCWH9j2eo_sJRP4CHk7NMVWQ" target="_blank">
+					<span class="fa fa-youtube-square" role="link"></span>
+				</a> 
+			</div>
+			<div id="sitemap-container"class="footer-container">
+				<a href="<?php echo $root_url . '/sitemap.xml'; ?> ">sitemap.xml</a>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
