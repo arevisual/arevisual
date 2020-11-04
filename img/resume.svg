@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="resume" transform="matrix(1,0,0,1,5.79766,-4.10801)">
+        <g id="resume1" serif:id="resume" transform="matrix(3.36266,0,0,3.36266,-122.505,-88.0846)">
+            <rect x="42.483" y="31.364" width="29.056" height="36.713" style="fill:white;stroke:black;stroke-width:0.89px;"/>
+        </g>
+        <g id="picture-frame" transform="matrix(3.36266,0,0,3.40548,-123.002,-90.1113)">
+            <rect x="51.814" y="34.064" width="10.689" height="13.268" style="fill:white;stroke:black;stroke-width:0.59px;"/>
+        </g>
+        <g id="body" transform="matrix(4.41958,0,0,3.98741,-183.346,-113.762)">
+            <path d="M55.229,41.284C56.16,41.03 57.151,44.002 58.932,41.395C59.709,40.257 61.072,42.793 61.072,42.793L61.016,46.082L53.301,46.138L53.346,42.917C53.346,42.917 54.427,41.502 55.229,41.284Z" style="fill:white;stroke:black;stroke-width:0.71px;"/>
+        </g>
+        <g id="head" transform="matrix(2.70382,0,0,2.98161,-84.7784,-74.0947)">
+            <ellipse cx="57.26" cy="38.17" rx="2.213" ry="2.833" style="fill:white;stroke:black;stroke-width:1.05px;"/>
+        </g>
+        <g id="top-text" transform="matrix(3.36266,0,0,1.98766,-122.858,-11.7865)">
+            <rect x="46.678" y="52.972" width="20.874" height="2.517"/>
+        </g>
+        <g id="middlle-text-" serif:id="middlle-text\" transform="matrix(3.36266,0,0,2.321,-122.858,-15.0136)">
+            <rect x="46.678" y="52.972" width="20.874" height="2.517"/>
+        </g>
+        <g id="bottom-text" transform="matrix(2.08171,0,0,2.11267,-49.6951,11.3833)">
+            <rect x="46.678" y="52.972" width="20.874" height="2.517"/>
+        </g>
+    </g>
+</svg>

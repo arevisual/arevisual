@@ -1,0 +1,38 @@
+#blog-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 1em;
+	.blog-link {
+		text-decoration: none;
+		grid-column: span 4;
+		@include md {
+			grid-column: span 2;
+		}
+		@include lg {
+			grid-column: span 1;
+		}
+		.blog-item {
+			border-radius: 4px;
+			background: #fff;
+			box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+			transition: 0.2s all ease-in-out;
+			cursor: pointer;
+			height: 750px;
+		}
+		.blog-item:hover {
+			transform: scale(1.02);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.65);
+		}
+		img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.text-container {
+			padding: 0.5em 1em;
+			h2 {
+				font-size: 1.5em;
+			}
+		}
+	}
+}

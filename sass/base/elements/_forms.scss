@@ -1,0 +1,5 @@
+div.wpforms-container-full .wpforms-form input[type="submit"],
+div.wpforms-container-full .wpforms-form button[type="submit"],
+div.wpforms-container-full .wpforms-form .wpforms-page-button {
+	@extend .wp-block-button__link.is-style-outline;
+}
