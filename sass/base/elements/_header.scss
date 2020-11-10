@@ -9,9 +9,12 @@
 		margin: 0 auto;
 		text-align: center;
 		.site-title {
-			font-size: 6em;
+			font-size: 4em;
 		
 			line-height: 1em;
+			@include lg {
+				font-size: 6em;
+			}
 			a {
 				font-family: $heading-font;
 				font-weight: 900;
