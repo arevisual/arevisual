@@ -16,11 +16,14 @@
 			background: unset;
 		}
 		.fa {
-			font-size: 1.5em;
+			font-size: 1em;
 			transition: all 0.3s ease;
 			margin: 0 0.5em;
 			&:hover {
 				color: $accent-color;
+			}
+			@include md {
+				font-size: 1.5em;
 			}
 		}
 	}
