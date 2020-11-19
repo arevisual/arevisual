@@ -20,16 +20,16 @@
 			</div>
 			<div id="social-menu" class="footer-container">
 				<a href="https://github.com/arevisual/" target="_blank">
-					<span class="fa fa-github-square" role="link"></span>
+					<i class="fab fa-github-square" role="link"></i>
 				</a>
 				<a href="https://www.linkedin.com/in/andrewemery" target="_blank">
-					<span class="fa fa-linkedin-square" role="link"></span>
+					<i class="fab fa-linkedin" role="link"></i>
 				</a>
 				<a href="https://www.shutterstock.com/g/are%20visual" target="_blank">
-					<span class="fa fa-camera" role="link"></span>
+					<i class="fas fa-camera" role="link"></i>
 				</a>
 				<a href="https://www.youtube.com/channel/UCWH9j2eo_sJRP4CHk7NMVWQ" target="_blank">
-					<span class="fa fa-youtube-square" role="link"></span>
+					<i class="fab fa-youtube-square" role="link"></i>
 				</a> 
 			</div>
 			<div id="sitemap-container"class="footer-container">

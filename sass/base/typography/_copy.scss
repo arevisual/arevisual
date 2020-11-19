@@ -1,16 +1,15 @@
-*{
+* {
 	font-family: $main-font;
 }
 p {
 	margin-bottom: 1.5em;
 }
-span{
+span {
 	font-family: inherit;
 }
 dfn,
 cite,
-em,
-i {
+em {
 	font-style: italic;
 }
 
@@ -62,4 +61,10 @@ big {
 	margin: 0 0.1em 0 0;
 	padding: 0.05em 0.03em 0.15em 0.03em;
 	font-weight: 600;
+}
+.fa,
+.fas,
+.fab {
+	font-family: "FontAwesome";
+	font-style: normal;
 }
