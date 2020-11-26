@@ -30,7 +30,10 @@
 		.text-container {
 			padding: 0.5em 1em;
 			h2 {
-				font-size: 1.5em;
+				font-size: 1.2em;
+				@include md {
+					font-size: 1.5em;
+				}
 			}
 		}
 	}
